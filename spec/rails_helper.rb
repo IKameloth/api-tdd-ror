@@ -75,8 +75,10 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   # conf custom
-  # include custom helper to test
+  # include custom helpers to test
   config.include RequestSpecHelper, type: :request
+  config.include RequestSpecHelper
+  config.include ControllerSpecHelper
   # add factory bot methods
   config.include FactoryBot::Syntax::Methods
 
